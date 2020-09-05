@@ -204,6 +204,7 @@ function getCubeMaterial(convex) {
 }
 
 const picture = document.getElementById('picture')
+const img = document.getElementById('x')
 const check = document.getElementById('slim')
 const load = document.getElementById('load')
 load.addEventListener('click', () => {
@@ -213,7 +214,7 @@ load.addEventListener('click', () => {
     c.remove()
   }
 
-  const pic = 'https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw'
+  const pic = document.getElementById('x')
   createImageBitmap(pic, {
     resizeQuality: 'pixelated'
   }).then((r) => create3DModel(r, check.checked))
