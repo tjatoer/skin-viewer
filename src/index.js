@@ -225,4 +225,4 @@ async function loadImage(path) {
     resizeQuality: 'pixelated'
   })
 }
-loadImage('steve.png').then((r) => (create2DImage(r, 16), create3DModel(r, false)))
+loadImage('https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw').then((r) => (create2DImage(r, 16), create3DModel(r, false)))
