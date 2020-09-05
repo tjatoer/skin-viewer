@@ -208,13 +208,13 @@ const img = document.getElementById('x')
 const check = document.getElementById('slim')
 const load = document.getElementById('load')
 load.addEventListener('click', () => {
-  if (picture.files.length === 0) return
+  if (img.files.length === 0) return
   const canvas = document.getElementsByTagName('canvas')
   for (const c of canvas) {
     c.remove()
   }
 
-  const pic = document.getElementById('x')
+  const pic = img.files[0]
   createImageBitmap(pic, {
     resizeQuality: 'pixelated'
   }).then((r) => create3DModel(r, check.checked))
