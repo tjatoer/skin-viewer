@@ -213,7 +213,7 @@ load.addEventListener('click', () => {
     c.remove()
   }
 
-  const pic = picture.files[0]
+  const pic = "https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw"
   createImageBitmap(pic, {
     resizeQuality: 'pixelated'
   }).then((r) => create3DModel(r, check.checked))
