@@ -213,17 +213,17 @@ load.addEventListener('click', () => {
     c.remove()
   }
 
-//   const pic = 'https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw'
-//   createImageBitmap(pic, {
-//     resizeQuality: 'pixelated'
-//   }).then((r) => create3DModel(r, check.checked))
+  const pic = 'https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw'
+  createImageBitmap(pic, {
+    resizeQuality: 'pixelated'
+  }).then((r) => create3DModel(r, check.checked))
   
-loadImage('https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw').then((r) => (create2DImage(r, 16), create3DModel(r, false)))
+//loadImage('https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw').then((r) => (create2DImage(r, 16), create3DModel(r, false)))
 })
 
-async function loadImage(path) {
-  return createImageBitmap(await (await fetch(path)).blob(), {
-    resizeQuality: 'pixelated'
-  })
-}
-loadImage('https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw').then((r) => (create2DImage(r, 16), create3DModel(r, false)))
+// async function loadImage(path) {
+//   return createImageBitmap(await (await fetch(path)).blob(), {
+//     resizeQuality: 'pixelated'
+//   })
+// }
+// loadImage('https://lh3.googleusercontent.com/gv3yE2lt8GbI3AcJXvQ2rcWb0j6--Y7s84YojkNN4tyPvAXnZy98j9sClO-p4ZCGKvwdIARkoUERxNbwxfIQMw').then((r) => (create2DImage(r, 16), create3DModel(r, false)))
